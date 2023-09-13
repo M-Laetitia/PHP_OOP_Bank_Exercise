@@ -5,12 +5,12 @@
 Class BankAccount
 {
     private string $accountNumber;
-    private int $initilaBankBalance;
+    private float $initilaBankBalance;
     private string $currency;
 
     private AccountHolder $accountHolder;
 
-    public function __construct (string $accountNumber, int $initilaBankBalance, string $currency, AccountHolder $accountHolder) {
+    public function __construct (string $accountNumber, float $initilaBankBalance, string $currency, AccountHolder $accountHolder) {
         $this->accountNumber = $accountNumber;
         $this->initilaBankBalance = $initilaBankBalance;
         $this->currency = $currency;
@@ -35,11 +35,11 @@ Class BankAccount
         }
 
 
-        public function getInitilaBankBalance(): int
+        public function getInitilaBankBalance(): float
         {
             return $this->initilaBankBalance;
         }
-        public function setInitilaBankBalance(int $initilaBankBalance)
+        public function setInitilaBankBalance(float $initilaBankBalance)
         {
             $this->initilaBankBalance = $initilaBankBalance;
         }
